@@ -71,7 +71,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="编程,JS," />
 
 
 
@@ -87,15 +87,31 @@
 
 
 
-<meta name="description" content="记录我的学习过程">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Atom的笔记">
-<meta property="og:url" content="https://aceling.github.io/index.html">
+<meta name="description" content="前言这是一个很久以前做的模块了，最近想着整理一下过去的一些产出，所以就梳理到这里来了。
+目的利用localStorage作为缓存存储的手段，减轻页面加载负担（减少对接口请求的次数和重复请求同样数据）。
+介绍
+模块符合UMD规范；
+模块中的存储是基于localStorage的；
+经测试，功能能够兼容到ie8+，chrome，firefox等，对于不支持localStorage的浏览器，会从控制台输出">
+<meta property="og:type" content="article">
+<meta property="og:title" content="基于localStorage的本地缓存模块">
+<meta property="og:url" content="https://aceling.github.io/2017/09/27/基于localStorage的本地缓存模块/index.html">
 <meta property="og:site_name" content="Atom的笔记">
-<meta property="og:description" content="记录我的学习过程">
+<meta property="og:description" content="前言这是一个很久以前做的模块了，最近想着整理一下过去的一些产出，所以就梳理到这里来了。
+目的利用localStorage作为缓存存储的手段，减轻页面加载负担（减少对接口请求的次数和重复请求同样数据）。
+介绍
+模块符合UMD规范；
+模块中的存储是基于localStorage的；
+经测试，功能能够兼容到ie8+，chrome，firefox等，对于不支持localStorage的浏览器，会从控制台输出">
+<meta property="og:updated_time" content="2017-09-27T09:03:09.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Atom的笔记">
-<meta name="twitter:description" content="记录我的学习过程">
+<meta name="twitter:title" content="基于localStorage的本地缓存模块">
+<meta name="twitter:description" content="前言这是一个很久以前做的模块了，最近想着整理一下过去的一些产出，所以就梳理到这里来了。
+目的利用localStorage作为缓存存储的手段，减轻页面加载负担（减少对接口请求的次数和重复请求同样数据）。
+介绍
+模块符合UMD规范；
+模块中的存储是基于localStorage的；
+经测试，功能能够兼容到ie8+，chrome，firefox等，对于不支持localStorage的浏览器，会从控制台输出">
 
 
 
@@ -123,13 +139,13 @@
 
 
 
-  <link rel="canonical" href="https://aceling.github.io/"/>
+  <link rel="canonical" href="https://aceling.github.io/2017/09/27/基于localStorage的本地缓存模块/"/>
 
 
 
 
 
-  <title> Atom的笔记 </title>
+  <title> 基于localStorage的本地缓存模块 | Atom的笔记 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="en">
@@ -154,9 +170,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -249,9 +263,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -281,10 +295,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/2017/09/27/基于localStorage的本地缓存模块/" itemprop="url">
-                  基于localStorage的本地缓存模块
-                </a>
+                基于localStorage的本地缓存模块
               
             
           </h1>
@@ -368,9 +379,7 @@
       
 
       
-        
-          
-            <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>这是一个很久以前做的模块了，最近想着整理一下过去的一些产出，所以就梳理到这里来了。</p>
+        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>这是一个很久以前做的模块了，最近想着整理一下过去的一些产出，所以就梳理到这里来了。</p>
 <h2 id="目的"><a href="#目的" class="headerlink" title="目的"></a>目的</h2><p>利用localStorage作为缓存存储的手段，减轻页面加载负担（减少对接口请求的次数和重复请求同样数据）。</p>
 <h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><ol>
 <li>模块符合UMD规范；</li>
@@ -421,384 +430,68 @@
 <li>（已更新）执行flush操作时，对于非系统添加的数据进行豁免，避免了无谓的清空。</li>
 </ul>
 
-          
+      
+    </div>
+
+    <div>
+      
         
+
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
       
     </div>
 
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="https://aceling.github.io/2017/06/05/My-Dear-Linda/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Atom">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/uploads/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Atom的笔记">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2017/06/05/My-Dear-Linda/" itemprop="url">
-                  My Dear Linda
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-06-05T14:37:31+08:00">
-                2017-06-05
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/生活/" itemprop="url" rel="index">
-                    <span itemprop="name">生活</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
+            <a href="/tags/编程/" rel="tag"># 编程</a>
           
-
+            <a href="/tags/JavaScript/" rel="tag"># JS</a>
           
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
         
-          
-            <h2 id="你好，Linda"><a href="#你好，Linda" class="headerlink" title="你好，Linda"></a>你好，Linda</h2><blockquote>
-<p>“这个女生好漂亮”<br>“和她聊天，很舒服、很开心”<br>“她会不会喜欢我呢…”</p>
-</blockquote>
-<h3 id="你来到我的城市"><a href="#你来到我的城市" class="headerlink" title="你来到我的城市"></a>你来到我的城市</h3><blockquote>
-<p>“明天终于要见面了，她会丑拒我吗，我应该说点什么呢”<br>(-<em>-)zzz</em>)就这样闭着眼想了一晚上</p>
-<p>“有个女仔躲在柱子后面，她就是Linda吧”<br>戴着帽子，一身连身短裙，好漂亮的女生</p>
-<p>“我能不能牵她的手呢”<br>她一直低着头，不敢看我</p>
-<p>惊悚的电影让我成功握着她的手，牵着她的手的感觉真好，虽然好多手汗呢<br>”我可以这样一直牵着她的手吗“</p>
-<p>就这样牵着她的手，走过了天汇广场的每个角落<br>然后带她到英雄广场、广东省人民体育场、中华广场这些我熟悉的地方，看我的城市</p>
-<p>··· 悄悄透露一句：我发现她一有机会就会偷拍我(¬_¬)</p>
-</blockquote>
-<h3 id="可以做我女朋友吗"><a href="#可以做我女朋友吗" class="headerlink" title="可以做我女朋友吗"></a>可以做我女朋友吗</h3><blockquote>
-<p>“她要回家了，我到底要不要跟她表白呢？会不会有一种逼她选择的感觉呢？毕竟还有很多人在追她”<br>我鼓起了勇气，在一个简陋的停车场，抱着她，轻轻地亲了她的额头<br>很不正式，给出了最简单的表白，她居然欣喜地答应了我<br>“我是有多么的幸运”</p>
-</blockquote>
-<h3 id="我去到你的城市"><a href="#我去到你的城市" class="headerlink" title="我去到你的城市"></a>我去到你的城市</h3><blockquote>
-<p>我紧张了，一早起床，再三准备<br>但是到出门前，还是忘记拿给姑婆的见面礼，再跑回去，又再仔细检查整个背包<br>衣服裤子、眼镜盒、充电器、钱包、现金、各种卡… 最重要，为Linda准备的表白礼物<br>耽误了点时间，赶不上高铁了，要改签最近一班，却又是无座的<br>“嗯，恋爱会令人变成笨蛋”</p>
-</blockquote>
-<h3 id="正式表白"><a href="#正式表白" class="headerlink" title="正式表白"></a>正式表白</h3><blockquote>
-<p>提前准备的独白：<br>“讲道理，我们认识的时间很短，我们之间的了解还是很少”<br>“但是，每一段感情都是独特的“<br>“我想，我们的感情特别在于，可以不讲道理”<br>”我喜欢你，喜欢和你聊天的那种吃糖的感觉，喜欢有你在身边的那种舒服的感觉，喜欢跟你一起的那种刚刚好“<br>“Linda，可以做我女朋友吗”</p>
-<p>实际上，面对面表白的时候，我只说出了我还记得的头尾两句:-(<br>庆幸，她再次said yes</p>
-<p>然后发生的事情，省略一万字…</p>
-</blockquote>
-<h3 id="一星期纪念日快乐"><a href="#一星期纪念日快乐" class="headerlink" title="一星期纪念日快乐"></a>一星期纪念日快乐</h3><blockquote>
-<p>Linda， 你说以前的感情，没有纪念日；<br>现在和我一起，我愿意给你每一个你想过的纪念日；<br>一星期纪念日快乐；♪(´ε｀ )</p>
-</blockquote>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-
-    <footer class="post-footer">
       
 
       
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="https://aceling.github.io/2017/03/09/我的第一篇博客/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Atom">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/uploads/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Atom的笔记">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
+              <a href="/2017/06/05/My-Dear-Linda/" rel="next" title="My Dear Linda">
+                <i class="fa fa-chevron-left"></i> My Dear Linda
+              </a>
             
-              
-                
-                <a class="post-title-link" href="/2017/03/09/我的第一篇博客/" itemprop="url">
-                  我的第一篇博客
-                </a>
-              
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-03-09T16:25:59+08:00">
-                2017-03-09
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/编程/" itemprop="url" rel="index">
-                    <span itemprop="name">编程</span>
-                  </a>
-                </span>
-
-                
-                
-                  , 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/编程/HTML/" itemprop="url" rel="index">
-                    <span itemprop="name">HTML</span>
-                  </a>
-                </span>
-
-                
-                
-                  , 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/编程/HTML/JavaScript/" itemprop="url" rel="index">
-                    <span itemprop="name">JS</span>
-                  </a>
-                </span>
-
-                
-                
-                  , 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/编程/HTML/JavaScript/CSS/" itemprop="url" rel="index">
-                    <span itemprop="name">CSS</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p>这是一条链接：<a href="https://www.baidu.com" target="_blank" rel="external">这是链接的字</a>! </p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
           
           </div>
@@ -806,6 +499,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -825,8 +522,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/uploads/avatar.png"
@@ -904,6 +610,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#目的"><span class="nav-number">2.</span> <span class="nav-text">目的</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#介绍"><span class="nav-number">3.</span> <span class="nav-text">介绍</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置和初始化"><span class="nav-number">4.</span> <span class="nav-text">配置和初始化</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#过期时间设置"><span class="nav-number">5.</span> <span class="nav-text">过期时间设置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#API"><span class="nav-number">6.</span> <span class="nav-text">API</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#init"><span class="nav-number">6.1.</span> <span class="nav-text">init</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#save"><span class="nav-number">6.2.</span> <span class="nav-text">save</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#del"><span class="nav-number">6.3.</span> <span class="nav-text">del</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#get"><span class="nav-number">6.4.</span> <span class="nav-text">get</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#update"><span class="nav-number">6.5.</span> <span class="nav-text">update</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#getSize"><span class="nav-number">6.6.</span> <span class="nav-text">getSize</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#getRemainSize"><span class="nav-number">6.7.</span> <span class="nav-text">getRemainSize</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#flush"><span class="nav-number">6.8.</span> <span class="nav-text">flush</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#flushDirtyRead"><span class="nav-number">6.9.</span> <span class="nav-text">_flushDirtyRead</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#用法"><span class="nav-number">7.</span> <span class="nav-text">用法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#源码"><span class="nav-number">8.</span> <span class="nav-text">源码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#附件"><span class="nav-number">9.</span> <span class="nav-text">附件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#优化的功能点"><span class="nav-number">10.</span> <span class="nav-text">优化的功能点</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -1016,6 +738,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
 
   
 
